@@ -1,0 +1,12 @@
+#! /bin/bash
+#
+# ülesanne
+#
+echo -n "Triinu Järv
+ " # väljastab reavahetusega nime
+echo -n "IS117
+" # väljastab õppegrupi +reavahetus
+echo "Antud aine tundub paljulubav/kasulik.
+Tunnen ennast kindlalt, oskan kaasa teha." # väljastab muljed antud ainest
+#
+# skripti lõpp
