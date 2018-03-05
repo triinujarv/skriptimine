@@ -1,12 +1,12 @@
-#!/bin/bash
+#! /bin/bash
 #
-# kasutajate nimekiri kujul Perenimi, Eesnimi
+# ülesanne
 #
-# skripti algus
-#
-who | cut -f1 -d" " | cut -f2 -d"." > perenimi # lõikame perenime, lisame faili
-who | cut -f1 -d" " | cut -f1 -d"." > eesnimi # lõikame eesnime. lisame faili
-paste -d"." perenimi eesnimi > nimed # kleebime failid õiges järjekorras kokku
-cat nimed | sort | uniq # sorteerime väljundit ja võtame korduvad välja
+echo -n "Triinu Järv
+ " # väljastab reavahetusega nime
+echo -n "IS117
+" # väljastab õppegrupi +reavahetus
+echo "Antud aine tundub paljulubav/kasulik.
+Tunnen ennast kindlalt, oskan kaasa teha." # väljastab muljed antud ainest
 #
 # skripti lõpp
