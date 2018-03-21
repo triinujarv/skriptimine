@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "$HOSTNAME at $(uptime)" | grep "." | cut -f 1 -d ","
