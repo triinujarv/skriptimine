@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo -n "Sisesta aluskandiku pikkus: "
+read pikkus
+echo -n "Sisesta aluskandiku laius: "
+read laius
+kandik=`expr $pikkus \* $laius`
+echo $kandik
+
+echo -n "Sisesta küpsiste pikkus: "
+read pikkus
+echo -n "Sisesta küpsiste laius: "
+read laius
+kypsis=`expr $pikkus \* $laius`
+echo $kypsis
+
+echo -n "Sisesta kihtide arv: "
+read kihtide_arv
+echo -n "Sisesta küpsiste arv ühes pakis: "
+read kypsiste_arv
+pakkide_arv=`expr $kandik / $kypsis \* $kihtide_arv / $kypsiste_arv`
+echo $pakkide_arv
