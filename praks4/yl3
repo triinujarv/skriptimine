@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Reisijate arv grupis: "
+read reisijad
+echo "Kohtade arv bussis: "
+read kohti
+
+taidetud=`expr $reisijad / $kohti`
+maha=`expr $reisijad - $taidetud \* $kohti`
+echo "Täidetud busse on $taidetud. Maha jääb $maha inimest."
