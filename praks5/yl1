@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Sisesta a külje väärtus: "
+read a
+echo "Sisesta b külje väärtus: "
+read b
+c=`expr $a \* $a + $b \* $b`
+echo "Hüpotenuusi pikkus on: "
+echo sqrt"($c)" | bc -l
