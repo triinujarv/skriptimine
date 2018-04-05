@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo -n "Sisesta kuu number: "
+read kuu
+
+case $kuu in
+"1") echo "$kuu. kuu on jaanuar";;
+"2") echo "$kuu. kuu on veebruar";;
+"3") echo "$kuu. kuu on märts";;
+"4") echo "$kuu. kuu on aprill";;
+"5") echo "$kuu. kuu on mai";;
+"6") echo "$kuu. kuu on juuni";;
+"7") echo "$kuu. kuu on juuli";;
+"8") echo "$kuu. kuu on august";;
+"9") echo "$kuu. kuu on september";;
+"10") echo "$kuu. kuu on oktoober";;
+"11") echo "$kuu. kuu on november";;
+"12") echo "$kuu. kuu on detsember";;
+*) echo "Vigane sisend";;
+esac
